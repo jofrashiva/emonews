@@ -83,9 +83,6 @@ This version introduces a ReactJS frontend with dynamic news loading using the N
 
 ---
 
-### **3. README_v3.md** – *Integrated Facial Emotion Detection*
-
-```markdown
 # EmoNews – Version 3
 
 ## Description
@@ -107,29 +104,33 @@ In this version, facial emotion detection is integrated using face-api.js. News 
 
 ## Setup
 
-1. Install face-api.js in client:
+1. Navigate to the `client/` directory.
+2. Install dependencies:
    ```bash
+   npm install
    npm install face-api.js
+
+   npm start
 
 ---
 
-### **4. README_v4.md** – *Final Version with Full Stack Integration*
+### `README_v4.md` – *Final Full Stack Version*
 
 ```markdown
 # EmoNews – Version 4 (Final)
 
 ## Description
 
-Final version with full-stack architecture. Features include mood detection, news filtering, MongoDB integration for storing user preferences, and complete UI polish.
+Final version with full-stack architecture. Features include mood detection, news filtering, MongoDB integration for storing user preferences, and a fully polished UI.
 
 ## Features
 
 - Emotion-based personalized news display.
 - Backend integration with Node.js and MongoDB.
 - Responsive and mobile-friendly UI.
-- Error handling and loading states.
+- Error handling and loading states for better UX.
 
-## Full Stack
+## Tech Stack
 
 - **Frontend:** ReactJS, face-api.js
 - **Backend:** Node.js, Express.js
@@ -138,9 +139,25 @@ Final version with full-stack architecture. Features include mood detection, new
 
 ## Installation
 
-### Backend
-```bash
-cd server
-npm install
+### Backend Setup
+
+1. Navigate to the backend folder:
+   ```bash
+   cd server
+   npm install
+
+## Mangodb setup
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+NEWS_API_KEY=your_newsapi_key
+
 npm start
 
+cd client
+
+
+npm install
+npm install face-api.js
+
+npm start
